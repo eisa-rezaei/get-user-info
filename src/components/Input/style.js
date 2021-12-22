@@ -3,10 +3,10 @@ import styled from "styled-components";
 export const StFromControlContainer = styled.div`
   width: 100%;
   height: 80px;
-  margin: 10px 0;
+  margin-bottom: 15px;
   & p {
     font-size: 12px;
-    margin-left: 30px;
+    margin-left: 10px;
     color: #ff9090;
     margin-top: 15px;
     align-self: flex-start;
@@ -29,7 +29,7 @@ export const StInputFromControl = styled.div`
 `;
 
 export const StInput = styled.input`
-  width: 300px;
+  width: 280px;
   margin-top: 10px;
   padding: 10px;
   padding-right: 20px;
