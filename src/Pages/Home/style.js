@@ -20,21 +20,19 @@ export const StHomeHeader = styled.div`
 
 export const StLoginPageLoginInputs = styled.form`
   width: 100%;
-  min-height: 600px;
-  padding: 10px;
-  margin-top: ${(props) => (props.isLogin ? "-100px" : "0")};
+  min-height: 650px;
+  padding: 10px 25px;
   border-radius: 20px;
   transition: all 0.5s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   z-index: 5;
 `;
 export const StIsMale = styled.div`
   width: 100%;
   height: 50px;
-  padding: 0 10px;
   margin-bottom: 10px;
   display: flex;
   align-items: center;

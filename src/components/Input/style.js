@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const StFromControlContainer = styled.div`
   width: 100%;
-  min-height: 80px;
+  height: 80px;
+  margin: 10px 0;
   & p {
     font-size: 12px;
     margin-left: 30px;
@@ -21,6 +22,7 @@ export const StInputFromControl = styled.div`
   align-items: center;
 
   & label {
+    font-size: 18px;
     width: 120px;
     text-align: right;
   }

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StButton = styled.button`
   width: ${(props) => props.width || "300px"};
-  min-height: 50px;
+  height: 50px;
   margin: 10px 0;
   padding: 15px 0;
   border-radius: 10px;
