@@ -1,0 +1,22 @@
+@font-face {
+  font-family: vazir;
+  font-weight: bold;
+  src: url("./vazir/Vazir-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: vazir;
+  font-weight: lighter;
+  src: url("./vazir/Vazir-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: vazir;
+  src: url("./vazir/Vazir.woff") format("woff");
+}
+
+@font-face {
+  font-family: vazir;
+  font-weight: bold;
+  src: url("./vazir/Vazir-Bold.woff") format("woff");
+}
