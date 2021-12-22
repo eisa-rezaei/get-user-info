@@ -1,10 +1,8 @@
-# userInfo wizard
+# get-user-info
 
 with this app you can add your information and save it in json-server and persist it on your device
 
-> This app is developed for pendar moj noo test case
-
-Demo : [Project Link](https://snapp-pay-eisatest.surge.sh/)
+> This app is developed for PENDAR MOJ NOO test case
 
 ## Install
 
@@ -28,4 +26,3 @@ yarn start
 ```bash
 yarn deploy
 ```
-# get-user-info
