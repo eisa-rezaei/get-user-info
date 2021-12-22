@@ -16,8 +16,15 @@ yarn
 
 you will need json-server running on your device
 
+running the Rest api server
+
 ```bash
 yarn server
+```
+
+running the App
+
+```bash
 yarn start
 ```
 
