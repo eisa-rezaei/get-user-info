@@ -13,7 +13,6 @@ import {
   StHomeContainer,
   StInputs,
   StIsMarried,
-  StLoginPageLoginInputs,
 } from "./style";
 import Header from "../../components/Header";
 import { useDispatch, useSelector } from "react-redux";
