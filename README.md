@@ -27,9 +27,3 @@ running the App
 ```bash
 yarn start
 ```
-
-## Deploy
-
-```bash
-yarn deploy
-```
