@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { StTimerContainer } from "./style";
 
 const Timer = ({ setIsZero }) => {
   const [time, setTime] = useState(15);
@@ -12,7 +13,12 @@ const Timer = ({ setIsZero }) => {
     if (time === 0) setIsZero(true);
   }, [time, setIsZero]);
 
-  return <>{time}s</>;
+  return (
+    <StTimerContainer>
+      <p>{time.toLocaleString("fa")}</p>
+      <span>ثانیه</span>
+    </StTimerContainer>
+  );
 };
 
 export default Timer;

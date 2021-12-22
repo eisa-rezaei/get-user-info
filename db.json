@@ -1,3 +1,16 @@
 {
-  "user": {}
+  "user": {
+    "name": "jesus",
+    "lastName": "Rezaei",
+    "mobile": "09309613322",
+    "nationalCode": 1451531801,
+    "id": "42a457c3-6b00-445b-9e49-dd1aa8e45dc2",
+    "isMale": true,
+    "AddTime": "2021-12-22T13:39:48.956Z",
+    "birthday": "1390/10/13",
+    "fatherName": "علی",
+    "homeNumber": "0219318331",
+    "birthdayPlace": "اردبیل",
+    "isMarried": false
+  }
 }

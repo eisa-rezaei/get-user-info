@@ -11,8 +11,8 @@ import api from "api/contacts";
 import {
   StDatePickerContainer,
   StHomeContainer,
+  StInputs,
   StIsMarried,
-  StLoginPageLoginInputs,
 } from "./style";
 import Header from "../../components/Header";
 import { useDispatch, useSelector } from "react-redux";
@@ -76,13 +76,13 @@ const Complete = () => {
   return (
     <StHomeContainer>
       <Header>تکمیل اطلاعات</Header>
-      <StLoginPageLoginInputs onSubmit={formik.handleSubmit}>
+      <StInputs onSubmit={formik.handleSubmit}>
         <StDatePickerContainer>
           <BirthdayDatePicker
             selectedDay={selectedBirthdayDay}
             setSelectedDay={setSelectedBirthdayDay}
           />
-          : تاریخ تولد
+          <span>: تاریخ تولد</span>
         </StDatePickerContainer>
         <Input
           placeholder="نام پدر"
@@ -118,7 +118,7 @@ const Complete = () => {
         </StIsMarried>
 
         <Button type="submit">ثبت</Button>
-      </StLoginPageLoginInputs>
+      </StInputs>
     </StHomeContainer>
   );
 };

@@ -18,17 +18,16 @@ export const StHomeHeader = styled.div`
   background-color: orange;
 `;
 
-export const StLoginPageLoginInputs = styled.form`
+export const StInputs = styled.form`
   width: 100%;
-  min-height: 600px;
-  padding: 10px;
-  margin-top: ${(props) => (props.isLogin ? "-100px" : "0")};
+  min-height: 650px;
+  padding: 10px 25px;
   border-radius: 20px;
   transition: all 0.5s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   z-index: 5;
 `;
 export const StIsMarried = styled.div`
@@ -49,8 +48,28 @@ export const StIsMarried = styled.div`
 
 export const StDatePickerContainer = styled.div`
   width: 100%;
-  padding-left: 100px;
+  margin-bottom: 15px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  & span {
+    width: 120px;
+    text-align: right;
+    font-size: 18px;
+  }
+  & input {
+    width: 280px;
+    margin-top: 10px;
+    padding: 10px;
+    padding-right: 20px;
+    font-size: 0.8rem;
+    text-align: right;
+    border: none;
+    border-bottom: 3px solid #ededed;
+    transition: all 0.2s linear;
+    :focus,
+    :hover {
+      border-bottom: 3px solid #ffbb3380;
+    }
+  }
 `;

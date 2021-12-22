@@ -8,7 +8,11 @@ import { useNavigate } from "react-router-dom";
 import { setStep } from "redux/userInfo/actions";
 import selectors from "redux/userInfo/selectors";
 import * as Yup from "yup";
-import { StSmsContainer, StSmsPageContainer } from "./style";
+import {
+  StSmsContainer,
+  StSmsPageContainer,
+  StTimerPlaceHolder,
+} from "./style";
 import Timer from "./Timer";
 
 const Code = () => {
@@ -28,8 +32,8 @@ const Code = () => {
     number: "",
   };
   const dispatch = useDispatch();
-  const onSubmit = (values) => {
-    if (!isZero && values.number === randomNumber) {
+  const onSubmit = () => {
+    if (!isZero) {
       navigate("/complete");
       dispatch(setStep("/complete"));
     }
@@ -44,6 +48,13 @@ const Code = () => {
     <StSmsPageContainer>
       <Header>کد ارسال شده به موبایل</Header>
       <StSmsContainer>
+        <StTimerPlaceHolder>
+          {!isZero ? (
+            <Timer setIsZero={setIsZero} />
+          ) : (
+            <p>درصورت عدم دریافت پیامک مجددا درخواست نمایید</p>
+          )}
+        </StTimerPlaceHolder>
         <Input
           inputName="number"
           formik={formik}
@@ -51,24 +62,21 @@ const Code = () => {
           placeholder={randomNumber}
           type="number"
         />
+
+        <Button onClick={formik.submitForm}>ارسال</Button>
         {isZero ? (
-          <Button
+          <h3
             onClick={() => {
               setRandomNumber(Random);
               setIsZero(false);
+              formik.setFieldValue("number", randomNumber);
             }}
-            width="100px"
-            bgColor="#a0a0a0"
           >
             ارسال مجدد
-          </Button>
+          </h3>
         ) : (
-          <>
-            <Timer setIsZero={setIsZero} />
-            <span>کد تایید &nbsp;{randomNumber}</span>
-          </>
+          <h3>کد تایید برای شما ارسال شد</h3>
         )}
-        <Button onClick={formik.submitForm}>ارسال</Button>
       </StSmsContainer>
     </StSmsPageContainer>
   );

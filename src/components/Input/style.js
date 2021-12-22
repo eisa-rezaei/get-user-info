@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 export const StFromControlContainer = styled.div`
   width: 100%;
-  min-height: 80px;
+  height: 80px;
+  margin-bottom: 15px;
   & p {
     font-size: 12px;
-    margin-left: 30px;
+    margin-left: 10px;
     color: #ff9090;
     margin-top: 15px;
     align-self: flex-start;
@@ -21,13 +22,14 @@ export const StInputFromControl = styled.div`
   align-items: center;
 
   & label {
+    font-size: 18px;
     width: 120px;
     text-align: right;
   }
 `;
 
 export const StInput = styled.input`
-  width: 300px;
+  width: 280px;
   margin-top: 10px;
   padding: 10px;
   padding-right: 20px;
